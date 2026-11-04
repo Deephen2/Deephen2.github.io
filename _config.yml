@@ -1,20 +1,20 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            Deephen2's Jekyll Gitbook
+longtitle:        Deephen2's Jekyll Gitbook
+author:           Deephen2
+email:            rladbfla0430@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  Uploading what I have learned and done in the past with Latex.
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
+url:              'https://deephen2.github.io'
 baseurl:          '/jekyll-gitbook'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
-remote_theme: sighingnow/jekyll-gitbook
+remote_theme: deephen2/jekyll-gitbook
 
 toc:
   enabled: true
@@ -44,7 +44,7 @@ markdown_ext:             markdown,mkdown,mkdn,mkd,md
 permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 # Disqus comments
-# disqushandler:            sighingnow
+# disqushandler:            deephen2
 
 exclude:
   - _drafts

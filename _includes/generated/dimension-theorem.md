@@ -1,42 +1,47 @@
 # Dimension Theorem
 
 <div class="math-lemma">
-
-**Lemma.**
-
-**Lemma 1** (Replacement Lemma). *Let $V$ be a vector space spanned by $n$ vectors. Then every linearly independent subset of $V$ contains at most $n$ vectors.*
-
+<p><strong>Lemma 1</strong> (Replacement Lemma). <em>Let <span
+class="math inline"><em>V</em></span> be a vector space spanned by <span
+class="math inline"><em>n</em></span> vectors. Then every linearly
+independent subset of <span class="math inline"><em>V</em></span>
+contains at most <span class="math inline"><em>n</em></span>
+vectors.</em></p>
 </div>
 <div class="math-theorem">
-
-**Theorem.**
-
-**Theorem 1** (Dimension Theorem). *Let $V$ be a finite-dimensional vector space. Then any two bases of $V$ have the same number of elements.*
-
+<p><strong>Theorem 1</strong> (Dimension Theorem). <em>Let <span
+class="math inline"><em>V</em></span> be a finite-dimensional vector
+space. Then any two bases of <span class="math inline"><em>V</em></span>
+have the same number of elements.</em></p>
 </div>
 <div class="math-proof">
-
-**Proof.**
-
-*Proof.* Let $$B_1 = \{v_1,v_2,\ldots,v_m\}$$ and $$B_2 = \{w_1,w_2,\ldots,w_n\}$$ be two bases of $V$.
-
-Since $B_1$ is linearly independent and $B_2$ spans $V$, the Replacement Lemma implies that $$m \leq n.$$
-
-Similarly, since $B_2$ is linearly independent and $B_1$ spans $V$, we obtain $$n \leq m.$$
-
-Combining these inequalities, $$m \leq n
-\quad \text{and} \quad
-n \leq m,$$ we conclude that $$\boxed{m=n}.$$
-
-Therefore, any two bases of $V$ have the same number of elements. ◻
-
+<p><em>Proof.</em> Let <span
+class="math display"><em>B</em><sub>1</sub> = {<em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>, …, <em>v</em><sub><em>m</em></sub>}</span>
+and <span
+class="math display"><em>B</em><sub>2</sub> = {<em>w</em><sub>1</sub>, <em>w</em><sub>2</sub>, …, <em>w</em><sub><em>n</em></sub>}</span>
+be two bases of <span class="math inline"><em>V</em></span>.</p>
+<p>Since <span class="math inline"><em>B</em><sub>1</sub></span> is
+linearly independent and <span
+class="math inline"><em>B</em><sub>2</sub></span> spans <span
+class="math inline"><em>V</em></span>, the Replacement Lemma implies
+that <span class="math display"><em>m</em> ≤ <em>n</em>.</span></p>
+<p>Similarly, since <span
+class="math inline"><em>B</em><sub>2</sub></span> is linearly
+independent and <span class="math inline"><em>B</em><sub>1</sub></span>
+spans <span class="math inline"><em>V</em></span>, we obtain <span
+class="math display"><em>n</em> ≤ <em>m</em>.</span></p>
+<p>Combining these inequalities, <span
+class="math display"><em>m</em> ≤ <em>n</em>  and  <em>n</em> ≤ <em>m</em>,</span>
+we conclude that <span class="math display">$$\boxed{m=n}.$$</span></p>
+<p>Therefore, any two bases of <span
+class="math inline"><em>V</em></span> have the same number of
+elements. ◻</p>
 </div>
 <div class="math-definition">
-
-**Definition.**
-
-**Definition 1** (Dimension). *The dimension of a finite-dimensional vector space $V$ is the number of vectors in any basis of $V$.*
-
-*It is denoted by $$\dim(V)=n.$$*
-
+<p><strong>Definition 1</strong> (Dimension). <em>The dimension of a
+finite-dimensional vector space <span
+class="math inline"><em>V</em></span> is the number of vectors in any
+basis of <span class="math inline"><em>V</em></span>.</em></p>
+<p><em>It is denoted by <span
+class="math display">dim (<em>V</em>) = <em>n</em>.</span></em></p>
 </div>

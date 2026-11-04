@@ -45,4 +45,4 @@ vector space $V$ is the number of vectors in any basis of $V$.*
 
 ---
 
-[View Full PDF]({{ '/assets/pdf/dimension-theorem.pdf' | relative_url }})
+[Download PDF]({{ '/assets/pdf/dimension-theorem.pdf' | relative_url }})

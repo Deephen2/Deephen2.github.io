@@ -3,3 +3,30 @@
  * Its purpose is for users of the theme to be able to add css rules from a blank file
  *   these get simply added to the ones already active in the layout.
  */
+
+ 
+/* Mathematical environments */
+
+.math-theorem,
+.math-lemma,
+.math-definition,
+.math-proposition,
+.math-corollary {
+    margin: 1.5em 0;
+    padding: 12px 16px;
+    border-left: 3px solid #64748b;
+    background: #f8fafc;
+    border-radius: 4px;
+}
+
+.math-proof {
+    margin: 1.5em 0;
+    padding: 8px 16px;
+}
+
+.math-theorem > p:first-child,
+.math-lemma > p:first-child,
+.math-definition > p:first-child,
+.math-proof > p:first-child {
+    margin-top: 0;
+}

@@ -4,7 +4,30 @@
  *   these get simply added to the ones already active in the layout.
  */
 
- 
+ /* 블로그 본문 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* 블로그 본문 */
+.markdown-section {
+    font-family: 'Roboto Slab', serif !important;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* 제목 */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: 600;
+}
+
+/* 왼쪽 사이드바 */
+.book-summary {
+    font-family: 'Roboto Slab', serif !important;
+}
+
 /* Mathematical environments */
 
 .math-theorem,

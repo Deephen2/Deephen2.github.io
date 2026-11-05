@@ -30,3 +30,16 @@
 .math-proof > p:first-child {
     margin-top: 0;
 }
+/* MathJax display equations: center alignment */
+.MathJax_Display,
+mjx-container[display="true"] {
+    display: block !important;
+    text-align: center !important;
+    margin: 1.5em auto !important;
+}
+
+/* MathJax SVG output */
+mjx-container[display="true"] > svg {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

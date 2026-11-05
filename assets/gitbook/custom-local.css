@@ -152,14 +152,14 @@
    5. MathJax Font Size
    ========================================== */
 
-/* Inline math: $...$ */
+/* 본문 수식 */
 .markdown-section mjx-container:not([display="true"]) {
     font-size: 100% !important;
 }
 
-/* Display math: \[...\], align* */
+/* 독립 수식 */
 .markdown-section mjx-container[display="true"] {
-    font-size: 115% !important;
+    font-size: 125% !important;
 }
 
 /* MathJax 2 compatibility */
@@ -168,5 +168,5 @@
 }
 
 .markdown-section .MathJax_Display {
-    font-size: 115% !important;
+    font-size: 125% !important;
 }

@@ -47,8 +47,8 @@ class="math inline"><em>x</em> ∈ <em>N</em>(<em>A</em>)</span>. Since
 <span class="math inline"><em>A</em><em>x</em> = 0</span>, it follows
 that <span class="math display">$$\begin{aligned}
         x &amp;= I_nx \\
-        &amp; = A_l^{-1}Ax \\
-        &amp;= A_l^{-1}(0) \\
+        &amp; = A_l^{\scriptscriptstyle -1}Ax \\
+        &amp;= A_l^{\scriptscriptstyle -1}(0) \\
         &amp; = 0
     
 \end{aligned}$$</span> Hence, <span
@@ -63,10 +63,11 @@ inverse</em></p>
 </div>
 <div class="math-proof">
 <p><em>Proof.</em> Suppose that <span
-class="math inline">$A^{T}Ax=\vec{0}$</span>, then, <span
-class="math display">$$\begin{aligned}
-        x^{T}A^{T}Ax&amp;=(Ax)^{T}Ax \\
-        &amp;= {\lVert Ax\rVert}^2 \\
+class="math inline">$A^{\scriptscriptstyle T}Ax=\vec{0}$</span>, then,
+<span class="math display">$$\begin{aligned}
+        x^{\scriptscriptstyle T}A^{\scriptscriptstyle
+T}Ax&amp;=(Ax)^{\scriptscriptstyle T}Ax \\
+        &amp;= {\lVert Ax\rVert}^{\scriptscriptstyle 2} \\
         &amp;= Ax \\
         &amp;= \vec{0}
     

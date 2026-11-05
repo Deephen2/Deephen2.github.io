@@ -5,31 +5,39 @@
  */
 
  /* 블로그 본문 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/400.css');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/700.css');
 
-/* 블로그 본문 */
+/* LaTeX-style typography */
+
 .markdown-section {
-    font-family: 'Roboto Slab', serif !important;
-    font-size: 16px;
+    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-size: 17px;
     line-height: 1.8;
 }
 
-/* 제목 */
 .markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4 {
-    font-family: 'Roboto Slab', serif !important;
-    font-weight: 600;
+    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-weight: 700;
 }
 
-/* 왼쪽 사이드바 */
 .book-summary {
-    font-family: 'Roboto Slab', serif !important;
+    font-family: 'CMU Serif', 'Times New Roman', serif !important;
 }
 
 /* Mathematical environments */
-
+.math-theorem,
+.math-lemma,
+.math-definition,
+.math-proposition,
+.math-corollary,
+.math-proof {
+    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+}
+/* Mathematical theorem boxes */
 .math-theorem,
 .math-lemma,
 .math-definition,
@@ -42,6 +50,7 @@
     border-radius: 4px;
 }
 
+/* Proof */
 .math-proof {
     margin: 1.5em 0;
     padding: 8px 16px;

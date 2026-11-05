@@ -66,7 +66,7 @@ then A has left inverse</em></p>
 class="math inline">$A^{\top}Ax=\vec{0}$</span>, then, <span
 class="math display">$$\begin{aligned}
         x^{\top}A^{\top}Ax&amp;=(Ax)^{\top}Ax \\
-        &amp;= {\|Ax\|}^2 \\
+        &amp;= {\lVert Ax\rVert}^2 \\
         &amp;= Ax \\
         &amp;= \vec{0}
     
@@ -111,7 +111,7 @@ class="math display"><em>N</em>(<em>A</em><sup>⊤</sup>) = {0}</span></p>
 class="math inline"><em>A</em><em>A</em><sup>⊤</sup> = 0</span>.
 Then</p>
 <p><span
-class="math display"><em>x</em><sup>⊤</sup><em>A</em><em>A</em><sup>⊤</sup> = ∥<em>A</em><sup>⊤</sup><em>x</em>∥<sup>2</sup> = 0</span></p>
+class="math display"><em>x</em><sup>⊤</sup><em>A</em><em>A</em><sup>⊤</sup> = ‖<em>A</em><sup>⊤</sup><em>x</em>‖<sup>2</sup> = 0</span></p>
 <p><span
 class="math display"><em>N</em>(<em>A</em><em>A</em><sup>⊤</sup>) ⊆ <em>N</em>(<em>A</em><sup>⊤</sup>)</span></p>
 <p>Since <span

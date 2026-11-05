@@ -147,3 +147,18 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+/* ==========================================
+   5. MathJax Font Size
+   ========================================== */
+
+/* 본문에 포함된 수식 */
+.markdown-section mjx-container:not([display="true"]),
+.markdown-section .MathJax:not(.MathJax_Display) {
+    font-size: 115% !important;
+}
+
+/* 가운데 정렬된 독립 수식 */
+.markdown-section mjx-container[display="true"],
+.markdown-section .MathJax_Display {
+    font-size: 120% !important;
+}

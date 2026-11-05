@@ -151,14 +151,22 @@
    5. MathJax Font Size
    ========================================== */
 
-/* 본문에 포함된 수식 */
-.markdown-section mjx-container:not([display="true"]),
-.markdown-section .MathJax:not(.MathJax_Display) {
-    font-size: 115% !important;
+/* MathJax 3/4: 본문 수식 */
+.markdown-section mjx-container:not([display="true"]) {
+    font-size: 1.3em !important;
 }
 
-/* 가운데 정렬된 독립 수식 */
-.markdown-section mjx-container[display="true"],
+/* MathJax 3/4: 독립 수식 */
+.markdown-section mjx-container[display="true"] {
+    font-size: 1.4em !important;
+}
+
+/* MathJax 2: 본문 수식 */
+.markdown-section .MathJax {
+    font-size: 130% !important;
+}
+
+/* MathJax 2: 독립 수식 */
 .markdown-section .MathJax_Display {
-    font-size: 120% !important;
+    font-size: 140% !important;
 }

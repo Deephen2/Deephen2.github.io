@@ -1,0 +1,19 @@
+.book .book-summary .sidebar-group > details > summary {
+  display: list-item;
+  cursor: pointer;
+  padding: 10px 15px 10px 22px;
+  font-weight: 600;
+  color: inherit;
+}
+.book .book-summary .sidebar-group > details > summary:focus-visible {
+  outline: 2px solid #4183c4;
+  outline-offset: -2px;
+}
+.book .book-summary .sidebar-group > details > ul {
+  list-style: none;
+  padding-left: 12px;
+  margin: 0;
+}
+.book .book-summary .sidebar-group > details:not([open]) > ul {
+  display: none;
+}

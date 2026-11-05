@@ -1,0 +1,10 @@
+<li class="chapter{% if page.url == include.item.url %} active{% endif %}"
+    data-level="document-{{ include.item.url | escape }}"
+    data-path="{{ include.item.url | relative_url | escape }}">
+  <a href="{{ include.item.url | relative_url | escape }}"
+     {% if page.url == include.item.url %}aria-current="page"{% endif %}
+     onclick="pageScrollToTop(this)">{{ include.item.title | escape }}</a>
+  {% if site.toc.enabled and page.url == include.item.url %}
+    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+  {% endif %}
+</li>

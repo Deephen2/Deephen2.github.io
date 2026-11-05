@@ -1,0 +1,1 @@
+{% for node in include.nodes %}{{ node.id }}|{% if node.children %}{% include sidebar-ids.html nodes=node.children %}{% endif %}{% endfor %}

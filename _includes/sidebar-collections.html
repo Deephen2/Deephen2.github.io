@@ -1,0 +1,21 @@
+{% capture sidebar_ids %}{% include sidebar-ids.html nodes=site.data.sidebar.groups %}{% endcapture %}
+{% assign valid_ids = sidebar_ids | split: '|' %}
+{% assign labels = site.ordered_collections %}
+{% unless labels %}
+  {% assign labels = site.collections | map: 'label' %}
+{% endunless %}
+{% for label in labels %}
+  {% assign collection = site.collections | where: 'label', label | first %}
+  {% if collection.output %}
+    {% if label == 'posts' %}
+      {% for node in site.data.sidebar.groups %}
+        {% include sidebar-group.html node=node valid_ids=valid_ids %}
+      {% endfor %}
+    {% else %}
+      {% for entry in site[label] %}
+        {% include sidebar-entry.html item=entry %}
+      {% endfor %}
+    {% endif %}
+    <li class="divider"></li>
+  {% endif %}
+{% endfor %}

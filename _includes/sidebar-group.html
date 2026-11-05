@@ -1,0 +1,26 @@
+{% capture branch %}
+  {% for child in include.node.children %}
+    {% include sidebar-group.html node=child valid_ids=include.valid_ids %}
+  {% endfor %}
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for entry in sorted_posts %}
+    {% assign filename = entry.path | split: '/' | last %}
+    {% assign category = entry.categories | first %}
+    {% assign group_id = entry.sidebar_parent
+      | default: site.data.sidebar.post_groups[filename]
+      | default: site.data.sidebar.category_groups[category]
+      | default: 'uncategorized' %}
+    {% unless include.valid_ids contains group_id %}
+      {% assign group_id = 'uncategorized' %}
+    {% endunless %}
+    {% if group_id == include.node.id %}
+      {% include sidebar-entry.html item=entry %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+<li class="sidebar-group">
+  <details{% if branch contains 'aria-current="page"' %} open{% endif %}>
+    <summary>{{ include.node.title | escape }}</summary>
+    <ul>{{ branch }}</ul>
+  </details>
+</li>

@@ -1,0 +1,22 @@
+groups:
+  - id: works
+    title: Works
+    children:
+      - id: mathematics
+        title: Mathematics
+        children:
+          - id: linear-algebra
+            title: Linear Algebra
+  - id: jekyll
+    title: Jekyll / 블로그 사용법
+  - id: uncategorized
+    title: 기타 글
+
+# 새 글이 기존 categories를 사용하면 자동으로 분류됩니다.
+category_groups:
+  Mathematics: linear-algebra
+  Jekyll: jekyll
+
+# 파일명으로 기존 글의 목차 위치만 변경합니다. URL은 바뀌지 않습니다.
+post_groups:
+  2026-11-04-dimension-theorem.md: linear-algebra

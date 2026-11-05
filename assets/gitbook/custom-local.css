@@ -30,16 +30,21 @@
 .math-proof > p:first-child {
     margin-top: 0;
 }
-/* MathJax display equations: center alignment */
-.MathJax_Display,
-mjx-container[display="true"] {
+/* Center display math equations */
+
+.markdown-section .MathJax_Display,
+.markdown-section mjx-container[display="true"],
+.markdown-section .math.display {
     display: block !important;
+    width: 100% !important;
     text-align: center !important;
     margin: 1.5em auto !important;
 }
 
-/* MathJax SVG output */
-mjx-container[display="true"] > svg {
+/* Center MathJax SVG output */
+
+.markdown-section mjx-container[display="true"] > svg {
+    display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }

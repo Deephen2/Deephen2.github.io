@@ -65,8 +65,8 @@ $$\operatorname{rank}(A) = m \impliedby m \leq n$$
 <p>Since <span class="math inline">\(\operatorname{rank}(A) = m\)</span>, there exists <span class="math inline">\(x \in \mathbb{R}^m\)</span> such that <span class="math inline">\(Ax = y\)</span>, which means <span class="math inline">\(\operatorname{Col}(A) = \mathbb{R}^m\)</span>.</p>
 <p>Since <span class="math inline">\(\operatorname{rank}(A) = \operatorname{rank}(A^{\scriptscriptstyle T}) = m\)</span> and <span class="math inline">\(m = \operatorname{rank}(A^{\scriptscriptstyle T}) + nulity A^{\scriptscriptstyle T}\)</span>.</p>
 <p><span class="math display">\[N(A^{\scriptscriptstyle T}) = \left\{0\right\}\]</span></p>
-<p>Suppose that <span class="math inline">\(AA^{\scriptscriptstyle T} = 0\)</span>. Then</p>
-<p><span class="math display">\[x^{\scriptscriptstyle T}AA^{\scriptscriptstyle T} = {\lVert A^{\scriptscriptstyle T}x \rVert}^{\scriptscriptstyle 2} = 0\]</span></p>
+<p>Suppose that <span class="math inline">\(AA^{\scriptscriptstyle T}x = 0\)</span>. Then</p>
+<p><span class="math display">\[x^{\scriptscriptstyle T}AA^{\scriptscriptstyle T}x = {\lVert A^{\scriptscriptstyle T}x \rVert}^{\scriptscriptstyle 2} = 0\]</span></p>
 <p><span class="math display">\[N(AA^{\scriptscriptstyle T}) \subseteq N(A^{\scriptscriptstyle T})\]</span></p>
 <p>Since <span class="math inline">\(N(A^{\scriptscriptstyle T}) = \left\{0\right\}\)</span> , it follows that <span class="math inline">\(N(AA^{\scriptscriptstyle T}) = \left\{0\right\}\)</span>.</p>
 <p>By using the rank-nulity theorem,</p>

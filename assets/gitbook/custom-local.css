@@ -2,8 +2,9 @@
 /* ==========================================
    1. Font Import
    ========================================== */
-/* Computer Modern Unicode Serif */
+
 @import url('https://fonts.cdnfonts.com/css/computer-modern');
+
 
 /* ==========================================
    2. LaTeX-style Typography
@@ -75,7 +76,7 @@
     line-height: 1.55;
 }
 
-/* Theorem, Lemma, Definition, Proposition, Corollary */
+/* Theorem boxes */
 .math-theorem,
 .math-lemma,
 .math-definition,
@@ -94,7 +95,7 @@
     padding: 8px 16px;
 }
 
-/* Paragraph spacing inside mathematical environments */
+/* Paragraph spacing */
 .math-theorem p,
 .math-lemma p,
 .math-definition p,
@@ -104,7 +105,7 @@
     margin-bottom: 0.6em;
 }
 
-/* Remove first paragraph top margin */
+/* First paragraph */
 .math-theorem > p:first-child,
 .math-lemma > p:first-child,
 .math-definition > p:first-child,
@@ -114,7 +115,7 @@
     margin-top: 0;
 }
 
-/* Remove last paragraph bottom margin */
+/* Last paragraph */
 .math-theorem > p:last-child,
 .math-lemma > p:last-child,
 .math-definition > p:last-child,
@@ -126,7 +127,7 @@
 
 
 /* ==========================================
-   4. MathJax Display Equations
+   4. MathJax Alignment
    ========================================== */
 
 /* Center display equations */
@@ -139,32 +140,33 @@
     margin: 1em auto !important;
 }
 
-/* Center MathJax SVG output */
+/* Center SVG output */
 .markdown-section mjx-container[display="true"] > svg {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+
 /* ==========================================
-   MathJax Font Size - Balanced
+   5. MathJax Font Size
    ========================================== */
 
-/* 본문 수식 */
+/* Inline math: $...$ */
 .markdown-section mjx-container:not([display="true"]) {
-    font-size: 105% !important;
+    font-size: 100% !important;
 }
 
-/* 독립 수식 */
+/* Display math: \[...\], align* */
 .markdown-section mjx-container[display="true"] {
-    font-size: 110% !important;
+    font-size: 115% !important;
 }
 
-/* MathJax 2: 본문 수식 */
-.markdown-section .MathJax:not(.MathJax_Display) {
-    font-size: 105% !important;
+/* MathJax 2 compatibility */
+.markdown-section .MathJax {
+    font-size: 100% !important;
 }
 
-/* MathJax 2: 독립 수식 */
 .markdown-section .MathJax_Display {
-    font-size: 110% !important;
+    font-size: 115% !important;
 }

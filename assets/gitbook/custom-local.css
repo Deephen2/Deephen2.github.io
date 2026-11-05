@@ -1,21 +1,32 @@
-/* This file is kept intentionally blank inside the jekyll-github-theme
- * It gets imported at the end of custom.css
- * Its purpose is for users of the theme to be able to add css rules from a blank file
- *   these get simply added to the ones already active in the layout.
- */
 
- /* 블로그 본문 폰트 */
+/* ==========================================
+   1. Font Import
+   ========================================== */
+
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/400.css');
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/700.css');
 
-/* LaTeX-style typography */
 
+/* ==========================================
+   2. LaTeX-style Typography
+   ========================================== */
+
+/* Main content */
 .markdown-section {
     font-family: 'CMU Serif', 'Times New Roman', serif !important;
-    font-size: 17px;
-    line-height: 1.8;
+    font-size: 19px !important;
+    line-height: 1.55 !important;
 }
 
+/* Paragraphs */
+.markdown-section p {
+    font-size: 1em;
+    line-height: 1.55;
+    margin-top: 0;
+    margin-bottom: 0.9em;
+}
+
+/* Headings */
 .markdown-section h1,
 .markdown-section h2,
 .markdown-section h3,
@@ -24,11 +35,37 @@
     font-weight: 700;
 }
 
+.markdown-section h1 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.markdown-section h2 {
+    font-size: 27px;
+    line-height: 1.35;
+}
+
+.markdown-section h3 {
+    font-size: 23px;
+    line-height: 1.4;
+}
+
+.markdown-section h4 {
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+/* Sidebar */
 .book-summary {
     font-family: 'CMU Serif', 'Times New Roman', serif !important;
 }
 
-/* Mathematical environments */
+
+/* ==========================================
+   3. Mathematical Environments
+   ========================================== */
+
+/* Font and line spacing */
 .math-theorem,
 .math-lemma,
 .math-definition,
@@ -36,15 +73,18 @@
 .math-corollary,
 .math-proof {
     font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-size: 19px;
+    line-height: 1.55;
 }
-/* Mathematical theorem boxes */
+
+/* Theorem, Lemma, Definition, Proposition, Corollary */
 .math-theorem,
 .math-lemma,
 .math-definition,
 .math-proposition,
 .math-corollary {
     margin: 1.5em 0;
-    padding: 12px 16px;
+    padding: 16px 20px;
     border-left: 3px solid #64748b;
     background: #f8fafc;
     border-radius: 4px;
@@ -56,25 +96,52 @@
     padding: 8px 16px;
 }
 
+/* Paragraph spacing inside mathematical environments */
+.math-theorem p,
+.math-lemma p,
+.math-definition p,
+.math-proposition p,
+.math-corollary p,
+.math-proof p {
+    margin-bottom: 0.6em;
+}
+
+/* Remove first paragraph top margin */
 .math-theorem > p:first-child,
 .math-lemma > p:first-child,
 .math-definition > p:first-child,
+.math-proposition > p:first-child,
+.math-corollary > p:first-child,
 .math-proof > p:first-child {
     margin-top: 0;
 }
-/* Center display math equations */
 
+/* Remove last paragraph bottom margin */
+.math-theorem > p:last-child,
+.math-lemma > p:last-child,
+.math-definition > p:last-child,
+.math-proposition > p:last-child,
+.math-corollary > p:last-child,
+.math-proof > p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   4. MathJax Display Equations
+   ========================================== */
+
+/* Center display equations */
 .markdown-section .MathJax_Display,
 .markdown-section mjx-container[display="true"],
 .markdown-section .math.display {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
-    margin: 1.5em auto !important;
+    margin: 1em auto !important;
 }
 
 /* Center MathJax SVG output */
-
 .markdown-section mjx-container[display="true"] > svg {
     display: block !important;
     margin-left: auto !important;

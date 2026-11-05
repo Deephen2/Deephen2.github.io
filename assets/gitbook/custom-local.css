@@ -2,10 +2,8 @@
 /* ==========================================
    1. Font Import
    ========================================== */
-
-@import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/400.css');
-@import url('https://cdn.jsdelivr.net/npm/@fontsource/cmun-serif@5.2.7/700.css');
-
+/* Computer Modern Unicode Serif */
+@import url('https://fonts.cdnfonts.com/css/computer-modern');
 
 /* ==========================================
    2. LaTeX-style Typography
@@ -13,7 +11,7 @@
 
 /* Main content */
 .markdown-section {
-    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-family: 'Computer Modern', 'Times New Roman', serif !important;
     font-size: 19px !important;
     line-height: 1.55 !important;
 }
@@ -31,7 +29,7 @@
 .markdown-section h2,
 .markdown-section h3,
 .markdown-section h4 {
-    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-family: 'Computer Modern', 'Times New Roman', serif !important;
     font-weight: 700;
 }
 
@@ -57,7 +55,7 @@
 
 /* Sidebar */
 .book-summary {
-    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-family: 'Computer Modern', 'Times New Roman', serif !important;
 }
 
 
@@ -72,7 +70,7 @@
 .math-proposition,
 .math-corollary,
 .math-proof {
-    font-family: 'CMU Serif', 'Times New Roman', serif !important;
+    font-family: 'Computer Modern', 'Times New Roman', serif !important;
     font-size: 19px;
     line-height: 1.55;
 }

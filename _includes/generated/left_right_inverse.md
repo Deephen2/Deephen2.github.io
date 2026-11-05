@@ -58,8 +58,8 @@ class="math display"><em>n</em> = rank (<em>A</em>) ≤ <em>m</em></sp
 </div>
 <div class="math-proposition">
 <p><strong>Proposition 2</strong>. <em>If <span
-class="math inline"><em>N</em>(<em>A</em>) = {<strong>0</strong>}</span>,
-then A has left inverse</em></p>
+class="math inline"><em>N</em>(<em>A</em>) = {0}</span>, then A has left
+inverse</em></p>
 </div>
 <div class="math-proof">
 <p><em>Proof.</em> Suppose that <span
@@ -104,8 +104,8 @@ class="math inline">Col (<em>A</em>) = ℝ<sup><em>m</em></sup></span>.</p
 <p>Since <span
 class="math inline">rank (<em>A</em>) = rank (<em>A</em><sup>⊤</sup>) = <em>m</em></span>
 and <span
-class="math inline"><em>m</em> = rank (<em>A</em><sup>⊤</sup>) + <em>n</em><em>u</em><em>l</em><em>i</em><em>t</em><em>y</em><em>A</em><sup>⊤</sup></span>.
-<span
+class="math inline"><em>m</em> = rank (<em>A</em><sup>⊤</sup>) + <em>n</em><em>u</em><em>l</em><em>i</em><em>t</em><em>y</em><em>A</em><sup>⊤</sup></span>.</p>
+<p><span
 class="math display"><em>N</em>(<em>A</em><sup>⊤</sup>) = {0}</span></p>
 <p>Suppose that <span
 class="math inline"><em>A</em><em>A</em><sup>⊤</sup> = 0</span>.

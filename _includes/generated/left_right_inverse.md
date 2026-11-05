@@ -63,26 +63,26 @@ inverse</em></p>
 </div>
 <div class="math-proof">
 <p><em>Proof.</em> Suppose that <span
-class="math inline">$A^{\top}Ax=\vec{0}$</span>, then, <span
+class="math inline">$A^{T}Ax=\vec{0}$</span>, then, <span
 class="math display">$$\begin{aligned}
-        x^{\top}A^{\top}Ax&amp;=(Ax)^{\top}Ax \\
+        x^{T}A^{T}Ax&amp;=(Ax)^{T}Ax \\
         &amp;= {\lVert Ax\rVert}^2 \\
         &amp;= Ax \\
         &amp;= \vec{0}
     
 \end{aligned}$$</span></p>
 <p>Therefore, <span
-class="math inline"><em>N</em>(<em>A</em><sup>⊤</sup><em>A</em>) = <em>N</em>(<em>A</em>) = {0}</span>.</p>
+class="math inline"><em>N</em>(<em>A</em><sup><em>T</em></sup><em>A</em>) = <em>N</em>(<em>A</em>) = {0}</span>.</p>
 <p>Since <span
-class="math inline"><em>A</em><sup>⊤</sup><em>A</em></span> is an <span
-class="math inline"><em>n</em> × <em>n</em></span> square matrix, the
-rank-nullity theorem implies that <span
-class="math inline">rank (<em>A</em><sup>⊤</sup><em>A</em>) = <em>n</em></span>.</p>
+class="math inline"><em>A</em><sup><em>T</em></sup><em>A</em></span> is
+an <span class="math inline"><em>n</em> × <em>n</em></span> square
+matrix, the rank-nullity theorem implies that <span
+class="math inline">rank (<em>A</em><sup><em>T</em></sup><em>A</em>) = <em>n</em></span>.</p>
 <p><span
-class="math display">(<em>A</em><sup>⊤</sup><em>A</em>)<sup>−1</sup><em>A</em><sup>⊤</sup><em>A</em> = ((<em>A</em><sup>⊤</sup><em>A</em>)<sup>−1</sup><em>A</em><sup>⊤</sup>)<em>A</em> = <em>I</em><sub><em>n</em></sub></span></p>
+class="math display">(<em>A</em><sup><em>T</em></sup><em>A</em>)<sup>−1</sup><em>A</em><sup><em>T</em></sup><em>A</em> = ((<em>A</em><sup><em>T</em></sup><em>A</em>)<sup>−1</sup><em>A</em><sup><em>T</em></sup>)<em>A</em> = <em>I</em><sub><em>n</em></sub></span></p>
 <p>Therefore,</p>
 <p><span
-class="math display">(<em>A</em><sup>⊤</sup><em>A</em>)<sup>−1</sup><em>A</em><sup>⊤</sup>
+class="math display">(<em>A</em><sup><em>T</em></sup><em>A</em>)<sup>−1</sup><em>A</em><sup><em>T</em></sup>
 is a left inverse of A</span> ◻</p>
 </div>
 <div class="math-proposition">
@@ -102,31 +102,31 @@ class="math inline"><em>A</em><em>x</em> = <em>y</em></span>, which
 means <span
 class="math inline">Col (<em>A</em>) = ℝ<sup><em>m</em></sup></span>.</p>
 <p>Since <span
-class="math inline">rank (<em>A</em>) = rank (<em>A</em><sup>⊤</sup>) = <em>m</em></span>
+class="math inline">rank (<em>A</em>) = rank (<em>A</em><sup><em>T</em></sup>) = <em>m</em></span>
 and <span
-class="math inline"><em>m</em> = rank (<em>A</em><sup>⊤</sup>) + <em>n</em><em>u</em><em>l</em><em>i</em><em>t</em><em>y</em><em>A</em><sup>⊤</sup></span>.</p>
+class="math inline"><em>m</em> = rank (<em>A</em><sup><em>T</em></sup>) + <em>n</em><em>u</em><em>l</em><em>i</em><em>t</em><em>y</em><em>A</em><sup><em>T</em></sup></span>.</p>
 <p><span
-class="math display"><em>N</em>(<em>A</em><sup>⊤</sup>) = {0}</span></p>
+class="math display"><em>N</em>(<em>A</em><sup><em>T</em></sup>) = {0}</span></p>
 <p>Suppose that <span
-class="math inline"><em>A</em><em>A</em><sup>⊤</sup> = 0</span>.
+class="math inline"><em>A</em><em>A</em><sup><em>T</em></sup> = 0</span>.
 Then</p>
 <p><span
-class="math display"><em>x</em><sup>⊤</sup><em>A</em><em>A</em><sup>⊤</sup> = ‖<em>A</em><sup>⊤</sup><em>x</em>‖<sup>2</sup> = 0</span></p>
+class="math display"><em>x</em><sup><em>T</em></sup><em>A</em><em>A</em><sup><em>T</em></sup> = ‖<em>A</em><sup><em>T</em></sup><em>x</em>‖<sup>2</sup> = 0</span></p>
 <p><span
-class="math display"><em>N</em>(<em>A</em><em>A</em><sup>⊤</sup>) ⊆ <em>N</em>(<em>A</em><sup>⊤</sup>)</span></p>
+class="math display"><em>N</em>(<em>A</em><em>A</em><sup><em>T</em></sup>) ⊆ <em>N</em>(<em>A</em><sup><em>T</em></sup>)</span></p>
 <p>Since <span
-class="math inline"><em>N</em>(<em>A</em><sup>⊤</sup>) = {0}</span> , it
-follows that <span
-class="math inline"><em>N</em>(<em>A</em><em>A</em><sup>⊤</sup>) = {0}</span>.</p>
+class="math inline"><em>N</em>(<em>A</em><sup><em>T</em></sup>) = {0}</span>
+, it follows that <span
+class="math inline"><em>N</em>(<em>A</em><em>A</em><sup><em>T</em></sup>) = {0}</span>.</p>
 <p>By using the rank-nulity theorem,</p>
 <p><span
-class="math display">rank (<em>A</em><em>A</em><sup>⊤</sup>) = <em>m</em></span></p>
+class="math display">rank (<em>A</em><em>A</em><sup><em>T</em></sup>) = <em>m</em></span></p>
 <p>Because <span
-class="math inline"><em>A</em><em>A</em><sup>⊤</sup></span> is a square
-matrix, it is therefore invertible.</p>
+class="math inline"><em>A</em><em>A</em><sup><em>T</em></sup></span> is
+a square matrix, it is therefore invertible.</p>
 <p><span
-class="math display"><em>A</em><em>A</em><sup>⊤</sup>(<em>A</em><em>A</em><sup>⊤</sup>)<sup>−1</sup> = <em>A</em>(<em>A</em><sup>⊤</sup>(<em>A</em><em>A</em><sup>⊤</sup>)<sup>−1</sup>) = <em>I</em><sub><em>m</em></sub></span></p>
+class="math display"><em>A</em><em>A</em><sup><em>T</em></sup>(<em>A</em><em>A</em><sup><em>T</em></sup>)<sup>−1</sup> = <em>A</em>(<em>A</em><sup><em>T</em></sup>(<em>A</em><em>A</em><sup><em>T</em></sup>)<sup>−1</sup>) = <em>I</em><sub><em>m</em></sub></span></p>
 <p>Hence, <span
-class="math inline"><em>A</em><sup>⊤</sup>(<em>A</em><em>A</em><sup>⊤</sup>)<sup>−1</sup></span>
+class="math inline"><em>A</em><sup><em>T</em></sup>(<em>A</em><em>A</em><sup><em>T</em></sup>)<sup>−1</sup></span>
 is right inverse of A ◻</p>
 </div>

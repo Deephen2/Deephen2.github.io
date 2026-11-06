@@ -1,0 +1,21 @@
+{% capture group_url %}/works/{% unless include.node.id == 'works' %}{{ include.node.id }}/{% endunless %}{% endcapture %}
+<li>
+  <a href="{{ group_url | relative_url }}">{{ include.node.title | escape }}</a>
+  {% capture items %}
+    {% for child in include.node.children %}
+      {% include works-tree.html node=child valid_ids=include.valid_ids %}
+    {% endfor %}
+    {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+    {% for entry in sorted_posts %}
+      {% assign filename = entry.path | split: '/' | last %}
+      {% assign category = entry.categories | first %}
+      {% assign group_id = entry.sidebar_parent | default: site.data.sidebar.post_groups[filename] | default: site.data.sidebar.category_groups[category] | default: 'uncategorized' %}
+      {% unless include.valid_ids contains group_id %}{% assign group_id = 'uncategorized' %}{% endunless %}
+      {% if group_id == include.node.id %}
+        <li><a href="{{ entry.url | relative_url | escape }}">{{ entry.title | escape }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% assign items = items | strip %}
+  {% if items != '' %}<ul>{{ items }}</ul>{% else %}<p class="category-empty">No posts yet.</p>{% endif %}
+</li>

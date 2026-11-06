@@ -17,3 +17,15 @@
 .book .book-summary .sidebar-group > details:not([open]) > ul {
   display: none;
 }
+
+.book .book-summary .sidebar-group > details > summary > a {
+  display: inline;
+  padding: 0;
+  white-space: normal;
+}
+.book .book-summary .sidebar-group a[aria-current="page"] {
+  color: #4183c4;
+  font-weight: 700;
+}
+.works-index > li { margin-bottom: 1em; }
+.category-empty { color: #777; font-size: 0.9em; }

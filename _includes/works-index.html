@@ -1,0 +1,19 @@
+{% capture ids %}{% include sidebar-ids.html nodes=site.data.sidebar.groups %}{% endcapture %}
+{% assign valid_ids = ids | split: '|' %}
+<ul class="works-index">
+  {% for root in site.data.sidebar.groups %}
+    {% if page.sidebar_group == 'works' %}
+      {% if root.id == 'works' %}
+        {% for child in root.children %}{% include works-tree.html node=child valid_ids=valid_ids %}{% endfor %}
+      {% endif %}
+    {% else %}
+      {% if root.id == page.sidebar_group %}{% include works-tree.html node=root valid_ids=valid_ids %}{% endif %}
+      {% for child in root.children %}
+        {% if child.id == page.sidebar_group %}{% include works-tree.html node=child valid_ids=valid_ids %}{% endif %}
+        {% for grandchild in child.children %}
+          {% if grandchild.id == page.sidebar_group %}{% include works-tree.html node=grandchild valid_ids=valid_ids %}{% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>

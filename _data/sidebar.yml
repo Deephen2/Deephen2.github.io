@@ -1,21 +1,34 @@
 groups:
   - id: works
     title: Works
+    default_open: true
     children:
       - id: mathematics
         title: Mathematics
         children:
           - id: linear-algebra
             title: Linear Algebra
+      - id: microeconomics
+        title: Microeconomics
+      - id: macroeconomics
+        title: Macroeconomics
+      - id: statistics
+        title: Statistics
   - id: jekyll
-    title: Jekyll / 블로그 사용법
+    title: Jekyll / Blog Guide
   - id: uncategorized
-    title: 기타 글
+    title: Other Posts
 
 # 새 글이 기존 categories를 사용하면 자동으로 분류됩니다.
 category_groups:
   Mathematics: linear-algebra
   Jekyll: jekyll
+  Microeconomics: microeconomics
+  미시경제학: microeconomics
+  Macroeconomics: macroeconomics
+  거시경제학: macroeconomics
+  Statistics: statistics
+  통계학: statistics
 
 # 파일명으로 기존 글의 목차 위치만 변경합니다. URL은 바뀌지 않습니다.
 post_groups:

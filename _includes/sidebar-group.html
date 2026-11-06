@@ -18,9 +18,10 @@
     {% endif %}
   {% endfor %}
 {% endcapture %}
+{% capture group_url %}/works/{% unless include.node.id == 'works' %}{{ include.node.id }}/{% endunless %}{% endcapture %}
 <li class="sidebar-group">
-  <details{% if branch contains 'aria-current="page"' %} open{% endif %}>
-    <summary>{{ include.node.title | escape }}</summary>
+  <details{% if branch contains 'aria-current="page"' or page.sidebar_group == include.node.id or include.node.default_open %} open{% endif %}>
+    <summary><a href="{{ group_url | relative_url }}"{% if page.sidebar_group == include.node.id %} aria-current="page"{% endif %}>{{ include.node.title | escape }}</a></summary>
     <ul>{{ branch }}</ul>
   </details>
 </li>

@@ -1,3 +1,33 @@
+# The Relationship Between the Ranks of a Matrix and Its Transpose
+
+To establish the relationship between the ranks of a matrix and its transpose, we introduce the following notation:
+
+Let $A \in M_{m\times n}$
+
+<div class="math-theorem">
+<p><strong>Theorem 1</strong>.  <em><span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T}A)\)</span></em></p>
+</div>
+<div class="math-proof">
+<p><em>Proof.</em> Since <span class="math inline">\(A^{\scriptscriptstyle T}A\)</span> is an <span class="math inline">\(n \times n\)</span> matrix and by using the rank-nullity theorem, we have, it follows that</p>
+<p><span class="math display">\[rank(A) = n - nulity(A)\]</span></p>
+<p><span class="math display">\[rank(A^{\scriptscriptstyle T}A) = n - nulity(A^{\scriptscriptstyle T}A)\]</span></p>
+<p>Suppose that <span class="math inline">\(x \in \ker(A)\)</span>. By the definition of the null space, <span class="math inline">\(Ax=0\)</span>. Consequently, <span class="math inline">\(A^{\scriptscriptstyle T}Ax=0\)</span>, <span class="math inline">\(x \in \ker(A^{\scriptscriptstyle T}A)\)</span></p>
+<p>Therefore, <span class="math inline">\(\ker(A) \subseteq \ker (A^{\scriptscriptstyle T}A)\)</span>.</p>
+<p>Conversely, suppose that <span class="math inline">\(x\in \ker(A^{\scriptscriptstyle T}A)\)</span>. Then, <span class="math inline">\(A^{\scriptscriptstyle T}Ax=0\)</span>. Hence,</p>
+<p><span class="math display">\[x^{\scriptscriptstyle T}A^{\scriptscriptstyle T}Ax = (Ax)^{\scriptscriptstyle T}Ax = \lVert Ax \rVert^{\scriptscriptstyle 2} = 0\]</span>.</p>
+<p>Thus, <span class="math inline">\(x \in \ker(A)\)</span> Therefore, <span class="math inline">\(\ker(A^{\scriptscriptstyle T}A) \subseteq \ker(A)\)</span>. Consequently, <span class="math inline">\(\ker(A) = \ker(A^{\scriptscriptstyle T}A)\)</span> , which is equivalent to <span class="math inline">\(nulity(A) = nulity(A^{\scriptscriptstyle T}A)\)</span>.</p>
+<p>Combining the two conclusions, we conclude that <span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T}A)\)</span>. ◻</p>
+</div>
+<div class="math-theorem">
+<p><strong>Theorem 2</strong>.  <em><span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T})\)</span></em></p>
+</div>
+<div class="math-proof">
+<p><em>Proof.</em> Let <span class="math inline">\(B\)</span> is an arbitrary <span class="math inline">\(m \times n\)</span> matrix. Suppose that <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T}B)\)</span>. Then <span class="math inline">\(x = B^{\scriptscriptstyle T}By\)</span> for some <span class="math inline">\(y \in \mathbb{R}^n\)</span>.</p>
+<p><span class="math display">\[x = B^{\scriptscriptstyle T}By = B^{\scriptscriptstyle T}(By)\]</span></p>
+<p>which implies that <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. Thus <span class="math inline">\(\operatorname{Col}(B^{\scriptscriptstyle T}B) \subseteq \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. That is equivalent to <span class="math inline">\(rank(B^{\scriptscriptstyle T}B) \leq rank(B^{\scriptscriptstyle T})\)</span>.</p>
+<p>Since <span class="math inline">\(B = (B^{\scriptscriptstyle T})^{\scriptscriptstyle T}\)</span>, <span class="math inline">\(rank (B^{\scriptscriptstyle T}) = rank(B)\)</span>. Because <span class="math inline">\(B\)</span> is an arbitrary <span class="math inline">\(m \times n\)</span> matrix, <span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T})\)</span>. ◻</p>
+</div>
+
 # Conditions for the Existence of Left and Right Inverses
 
 To establish the conditions for the existence of left and right inverses, we introduce the following notation:
@@ -16,7 +46,7 @@ Let $A \in M_{m\times n}$
 \end{aligned}\]</span></em></p>
 </div>
 <div class="math-theorem">
-<p><strong>Theorem 1</strong>.  <em><span class="math inline">\(n = \operatorname{rank}(A) + dim(N(A))\)</span></em></p>
+<p><strong>Theorem 3</strong>.  <em><span class="math inline">\(n = \operatorname{rank}(A) + dim(N(A))\)</span></em></p>
 </div>
 
 which implies that

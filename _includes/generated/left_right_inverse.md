@@ -1,31 +1,32 @@
 # The Relationship Between the Ranks of a Matrix and Its Transpose
 
-To establish the relationship between the ranks of a matrix and its transpose, we introduce the following notation:
+To investigate the relationship between the ranks of a matrix and its transpose, we first establish the following result.
 
 Let $A \in M_{m\times n}$
 
 <div class="math-theorem">
-<p><strong>Theorem 1</strong>.  <em><span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T}A)\)</span></em></p>
+<p><strong>Theorem 1</strong>.  <em><span class="math inline">\(\operatorname{rank}(A) = \operatorname{rank}(A^{\scriptscriptstyle T}A)\)</span></em></p>
 </div>
 <div class="math-proof">
-<p><em>Proof.</em> Since <span class="math inline">\(A^{\scriptscriptstyle T}A\)</span> is an <span class="math inline">\(n \times n\)</span> matrix and by using the rank-nullity theorem, we have, it follows that</p>
-<p><span class="math display">\[rank(A) = n - nulity(A)\]</span></p>
-<p><span class="math display">\[rank(A^{\scriptscriptstyle T}A) = n - nulity(A^{\scriptscriptstyle T}A)\]</span></p>
-<p>Suppose that <span class="math inline">\(x \in \ker(A)\)</span>. By the definition of the null space, <span class="math inline">\(Ax=0\)</span>. Consequently, <span class="math inline">\(A^{\scriptscriptstyle T}Ax=0\)</span>, <span class="math inline">\(x \in \ker(A^{\scriptscriptstyle T}A)\)</span></p>
+<p><em>Proof.</em> Since <span class="math inline">\(A^{\scriptscriptstyle T}A\)</span> is an <span class="math inline">\(n \times n\)</span> matrix, the rank-nullity theorem implies that</p>
+<p><span class="math display">\[\operatorname{rank}(A) = n - nulity(A)\]</span></p>
+<p><span class="math display">\[\operatorname{rank}(A^{\scriptscriptstyle T}A) = n - nulity(A^{\scriptscriptstyle T}A)\]</span></p>
+<p>Suppose that <span class="math inline">\(x \in \ker(A)\)</span>. By the definition of the null space, <span class="math inline">\(Ax=0\)</span>. Consequently, <span class="math inline">\(A^{\scriptscriptstyle T}Ax=0\)</span>, and hence <span class="math inline">\(x \in \ker(A^{\scriptscriptstyle T}A)\)</span></p>
 <p>Therefore, <span class="math inline">\(\ker(A) \subseteq \ker (A^{\scriptscriptstyle T}A)\)</span>.</p>
 <p>Conversely, suppose that <span class="math inline">\(x\in \ker(A^{\scriptscriptstyle T}A)\)</span>. Then, <span class="math inline">\(A^{\scriptscriptstyle T}Ax=0\)</span>. Hence,</p>
-<p><span class="math display">\[x^{\scriptscriptstyle T}A^{\scriptscriptstyle T}Ax = (Ax)^{\scriptscriptstyle T}Ax = \lVert Ax \rVert^{\scriptscriptstyle 2} = 0\]</span>.</p>
-<p>Thus, <span class="math inline">\(x \in \ker(A)\)</span> Therefore, <span class="math inline">\(\ker(A^{\scriptscriptstyle T}A) \subseteq \ker(A)\)</span>. Consequently, <span class="math inline">\(\ker(A) = \ker(A^{\scriptscriptstyle T}A)\)</span> , which is equivalent to <span class="math inline">\(nulity(A) = nulity(A^{\scriptscriptstyle T}A)\)</span>.</p>
-<p>Combining the two conclusions, we conclude that <span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T}A)\)</span>. ◻</p>
+<p><span class="math display">\[x^{\scriptscriptstyle T}A^{\scriptscriptstyle T}Ax = (Ax)^{\scriptscriptstyle T}Ax = \lVert Ax \rVert^{\scriptscriptstyle 2} = 0\]</span></p>
+<p>Thus, <span class="math inline">\(x \in \ker(A)\)</span>. Therefore, <span class="math inline">\(\ker(A^{\scriptscriptstyle T}A) \subseteq \ker(A)\)</span>. Consequently, <span class="math inline">\(\ker(A) = \ker(A^{\scriptscriptstyle T}A)\)</span>. Equivalently, <span class="math inline">\(nulity(A) = nulity(A^{\scriptscriptstyle T}A)\)</span>.</p>
+<p>Combining the two inclusions, we conclude that <span class="math inline">\(\operatorname{rank}(A) = \operatorname{rank}(A^{\scriptscriptstyle T}A)\)</span>. ◻</p>
 </div>
 <div class="math-theorem">
-<p><strong>Theorem 2</strong>.  <em><span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T})\)</span></em></p>
+<p><strong>Theorem 2</strong>.  <em><span class="math inline">\(\operatorname{rank}(A) = \operatorname{rank}(A^{\scriptscriptstyle T})\)</span></em></p>
 </div>
 <div class="math-proof">
-<p><em>Proof.</em> Let <span class="math inline">\(B\)</span> is an arbitrary <span class="math inline">\(m \times n\)</span> matrix. Suppose that <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T}B)\)</span>. Then <span class="math inline">\(x = B^{\scriptscriptstyle T}By\)</span> for some <span class="math inline">\(y \in \mathbb{R}^n\)</span>.</p>
+<p><em>Proof.</em> Let <span class="math inline">\(B\)</span> be an arbitrary <span class="math inline">\(m \times n\)</span> matrix. Suppose that <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T}B)\)</span>. Then there exists <span class="math inline">\(y \in \mathbb{R}^n\)</span> such that <span class="math inline">\(x = B^{\scriptscriptstyle T}By\)</span> .</p>
 <p><span class="math display">\[x = B^{\scriptscriptstyle T}By = B^{\scriptscriptstyle T}(By)\]</span></p>
-<p>which implies that <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. Thus <span class="math inline">\(\operatorname{Col}(B^{\scriptscriptstyle T}B) \subseteq \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. That is equivalent to <span class="math inline">\(rank(B^{\scriptscriptstyle T}B) \leq rank(B^{\scriptscriptstyle T})\)</span>.</p>
-<p>Since <span class="math inline">\(B = (B^{\scriptscriptstyle T})^{\scriptscriptstyle T}\)</span>, <span class="math inline">\(rank (B^{\scriptscriptstyle T}) = rank(B)\)</span>. Because <span class="math inline">\(B\)</span> is an arbitrary <span class="math inline">\(m \times n\)</span> matrix, <span class="math inline">\(rank(A) = rank(A^{\scriptscriptstyle T})\)</span>. ◻</p>
+<p>Hence, <span class="math inline">\(x \in \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. Thus <span class="math inline">\(\operatorname{Col}(B^{\scriptscriptstyle T}B) \subseteq \operatorname{Col}(B^{\scriptscriptstyle T})\)</span>. This implies tha <span class="math inline">\(\operatorname{rank}(B^{\scriptscriptstyle T}B) \leq \operatorname{rank}(B^{\scriptscriptstyle T})\)</span>.</p>
+<p>By Theorem 1, we have <span class="math inline">\(\operatorname{rank}(B)=\operatorname{rank}(B^{\scriptscriptstyle T}B)\)</span>. Consequently, <span class="math inline">\(\operatorname{rank}(B)\leq \operatorname{rank}(B^{\scriptscriptstyle T})\)</span> Since <span class="math inline">\(B\)</span> was arbitrary, we can apply the same argument to <span class="math inline">\(B^{\scriptscriptstyle T}\)</span>. Thus, <span class="math display">\[\operatorname{rank}(B^{\scriptscriptstyle T}) \leq \operatorname{rank}((B^{\scriptscriptstyle T})^{\scriptscriptstyle T})\]</span> Since, <span class="math inline">\((B^{\scriptscriptstyle T})^{\scriptscriptstyle T} = B\)</span>, it follows that <span class="math inline">\(\operatorname{rank}(B^{\scriptscriptstyle T}) \leq \operatorname{rank}(B)\)</span>. Combining the two inequalities, we conclude that <span class="math display">\[\operatorname{rank}(B) = \operatorname{rank}(B^{\scriptscriptstyle T})\]</span></p>
+<p>Since <span class="math inline">\(B\)</span> was arbitrary, the result holds for <span class="math inline">\(A\)</span>. ◻</p>
 </div>
 
 # Conditions for the Existence of Left and Right Inverses

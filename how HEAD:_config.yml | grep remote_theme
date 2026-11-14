@@ -1,113 +1,0 @@
-[1mdiff --git a/_config.yml b/_config.yml[m
-[1mindex aae33ad..089d51e 100644[m
-[1m--- a/_config.yml[m
-[1m+++ b/_config.yml[m
-[36m@@ -1,75 +1,75 @@[m
-[31m-# Configurations[m
-[31m-title:            Deephen2's Jekyll Gitbook[m
-[31m-longtitle:        Deephen2's Jekyll Gitbook[m
-[31m-author:           Deephen2[m
-[31m-email:            rladbfla0430@gmail.com[m
-[31m-description: >[m
-[31m-  Uploading what I have learned and done in the past with Latex.[m
-[31m-[m
-[31m-version:          1.0[m
-[31m-gitbook_version:  3.2.3[m
-[31m-[m
-[31m-url:              'https://deephen2.github.io'[m
-[31m-baseurl:          ""[m
-[31m-rss:              RSS[m
-[31m-[m
-[31m-# bootstrap: use the remote theme for the site itself[m
-[31m-remote_theme: sighingnow/jekyll-gitbook[m
-[31m-[m
-[31m-toc:[m
-[31m-  enabled: true[m
-[31m-  h_min:   1[m
-[31m-  h_max:   3[m
-[31m-[m
-[31m-# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}[m
-[31m-favicon_path:     /assets/gitbook/images/favicon.ico[m
-[31m-[m
-[31m-# markdown render engine.[m
-[31m-markdown:         kramdown[m
-[31m-kramdown:[m
-[31m-  auto_ids:               true[m
-[31m-  input:                  GFM[m
-[31m-  math_engine:            mathjax[m
-[31m-  smart_quotes:           lsquo,rsquo,ldquo,rdquo[m
-[31m-  toc_levels:             1..6[m
-[31m-  syntax_highlighter:     rouge[m
-[31m-  syntax_highlighter_opts:[m
-[31m-    guess_lang:           true[m
-[31m-[m
-[31m-syntax_highlighter_style: colorful[m
-[31m-[m
-[31m-markdown_ext:             markdown,mkdown,mkdn,mkd,md[m
-[31m-[m
-[31m-# Permalinks[m
-[31m-permalink:                /:categories/:year-:month-:day-:title:output_ext[m
-[31m-[m
-[31m-# Disqus comments[m
-[31m-# disqushandler:            deephen2[m
-[31m-[m
-[31m-exclude:[m
-[31m-  - _drafts[m
-[31m-  - _backup[m
-[31m-[m
-[31m-collections:[m
-[31m-  pages:[m
-[31m-    output: true[m
-[31m-    permalink: /:collection/:path/[m
-[31m-  others:[m
-[31m-    output: true[m
-[31m-    permalink: /:collection/:path/[m
-[31m-[m
-[31m-ordered_collections:[m
-[31m-  - posts[m
-[31m-  - pages[m
-[31m-  - others[m
-[31m-[m
-[31m-page_width: 800px[m
-[31m-[m
-[31m-destination:      ./_site[m
-[31m-incremental:      false[m
-[31m-regenerate:       true[m
-[31m-[m
-[31m-plugins:[m
-[31m-  - jekyll-feed[m
-[31m-  - jekyll-readme-index[m
-[31m-  - jemoji[m
-[32m+[m[32m# Configurations[m[41m[m
-[32m+[m[32mtitle:            Deephen2's Jekyll Gitbook[m[41m[m
-[32m+[m[32mlongtitle:        Deephen2's Jekyll Gitbook[m[41m[m
-[32m+[m[32mauthor:           Deephen2[m[41m[m
-[32m+[m[32memail:            rladbfla0430@gmail.com[m[41m[m
-[32m+[m[32mdescription: >[m[41m[m
-[32m+[m[32m  Uploading what I have learned and done in the past with Latex.[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32mversion:          1.0[m[41m[m
-[32m+[m[32mgitbook_version:  3.2.3[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32murl:              'https://deephen2.github.io'[m[41m[m
-[32m+[m[32mbaseurl:          ""[m[41m[m
-[32m+[m[32mrss:              RSS[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32m# bootstrap: use the remote theme for the site itself[m[41m[m
-[32m+[m[32mremote_theme: sighingnow/jekyll-gitbook[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32mtoc:[m[41m[m
-[32m+[m[32m  enabled: true[m[41m[m
-[32m+[m[32m  h_min:   1[m[41m[m
-[32m+[m[32m  h_max:   3[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32m# customize the link favicon in header, will be {{site.baseurl}}/{{site.favicon_path}}[m[41m[m
-[32m+[m[32mfavicon_path:     /assets/gitbook/images/favicon.ico[m[41m[m
-[32m+[m[41m[m
-[32m+[m[32m# markdown render engine.[m[41m[m
-[32m+[m[32mmarkdown:         kramdown[m[41m[m
-[32m+[m[32mkramdown:[m[41m[m
-[32m+[m[32m  auto_ids:               true[m[41m[m
-[32m+[m[32m  input:                  GFM[m[41m[m
-[32m+[m[32m  math_engine:            mathjax[m[41m[m
-[32m+[m[32m  smart_quo

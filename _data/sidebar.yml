@@ -8,6 +8,8 @@ groups:
         children:
           - id: linear-algebra
             title: Linear Algebra
+          - id: mathematical-analysis
+            title: Mathematical Analysis
       - id: microeconomics
         title: Microeconomics
       - id: macroeconomics
@@ -22,6 +24,7 @@ groups:
 # 새 글이 기존 categories를 사용하면 자동으로 분류됩니다.
 category_groups:
   Mathematics: linear-algebra
+  Mathematical Analysis: mathematical-analysis
   Jekyll: jekyll
   Microeconomics: microeconomics
   미시경제학: microeconomics

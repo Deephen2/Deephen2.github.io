@@ -100,6 +100,13 @@
     text-align: center;
 }
 
+.math-fbox-wide {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0.65em;
+    text-align: center;
+}
+
 /* Proof */
 .math-proof {
     margin: 1.5em 0;

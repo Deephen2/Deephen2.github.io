@@ -20,11 +20,7 @@ With this distinction in mind, you need to learn\...
 
 <div class="math-theorem">
 <p><strong>Theorem 1</strong>.  <em>(First-Order Necessary Conditions)<br />
-Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be differentiale at <span class="math inline">\(a \in U\)</span>. <span class="math display">\[\boxed{
-            \makebox[\dimexpr \textwidth-2 \fboxsep-2 \fboxrule \relax]{
-                If $f$ attains a local maximum at $a$, then $Df(a)=0$.
-            }
-        }\]</span></em></p>
+Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be differentiale at <span class="math inline">\(a \in U\)</span>. <span class="math-fbox math-fbox-wide">If <span class="math inline">\(f\)</span> attains a local maximum at <span class="math inline">\(a\)</span>, then <span class="math inline">\(Df(a)=0\)</span>.</span></em></p>
 </div>
 <div class="math-proof">
 <p><em>Proof.</em> Let <span class="math inline">\(h \in \mathbb{R}^{n}\)</span> be arbitrary. Since <span class="math inline">\(U\)</span> is open and <span class="math inline">\(f\)</span> has local maximum at <span class="math inline">\(a\)</span>, there exists <span class="math inline">\(\varepsilon &gt; 0\)</span> such that <span class="math inline">\(a + th \in U\)</span> for all <span class="math inline">\(t \in (-\varepsilon, \varepsilon)\)</span>.</p>
@@ -35,11 +31,7 @@ Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <s
 </div>
 <div class="math-theorem">
 <p><strong>Theorem 2</strong>.  <em>(Second Order Necessary conditions)<br />
-Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(a \in \operatorname{int}(U)\)</span> and <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be <span class="math inline">\(C^{2}\)</span> function. <span class="math display">\[\boxed{
-            \makebox[\dimexpr \textwidth-2 \fboxsep-2 \fboxrule \relax]{
-                If $f$ attains a local maximum at $a$, then $D^{2}f(a)$ is negative semi-definite.
-            }
-    }\]</span></em></p>
+Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(a \in \operatorname{int}(U)\)</span> and <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be <span class="math inline">\(C^{2}\)</span> function. <span class="math-fbox math-fbox-wide">If <span class="math inline">\(f\)</span> attains a local maximum at <span class="math inline">\(a\)</span>, then <span class="math inline">\(D^{2}f(a)\)</span> is negative semi-definite.</span></em></p>
 </div>
 <div class="math-proof">
 <p><em>Proof.</em> Let <span class="math inline">\(h \in \mathbb{R}^{n}\)</span> be arbitrary. Since <span class="math inline">\(U\)</span> is open, there exists <span class="math inline">\(\varepsilon &gt; 0\)</span> such that <span class="math inline">\(a+th \in U\)</span> for all <span class="math inline">\(t \in (-\varepsilon, \varepsilon)\)</span>.</p>

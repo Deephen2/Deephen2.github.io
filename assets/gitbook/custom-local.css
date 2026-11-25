@@ -89,6 +89,17 @@
     border-radius: 4px;
 }
 
+.math-fbox {
+    display: inline-block;
+    border: 1px solid currentColor;
+    padding: 0.2em 0.45em;
+    max-width: 100%;
+}
+
+.math-fbox-block {
+    text-align: center;
+}
+
 /* Proof */
 .math-proof {
     margin: 1.5em 0;

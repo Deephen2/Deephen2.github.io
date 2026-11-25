@@ -8,7 +8,7 @@ We begin by examining the necessary conditions for a differentiable function to 
 <p><strong>Theorem 1</strong>.  <em>(First-Order Necessary Conditions)<br />
 Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be differentiale at <span class="math inline">\(a \in U\)</span>.</em></p>
 <div class="center">
-
+<p class="math-fbox-block"><span class="math-fbox">If <span class="math inline">\(f\)</span> attains local maximum at <span class="math inline">\(a\)</span>, then <span class="math inline">\(Df(a)=0\)</span></span></p>
 </div>
 </div>
 <div class="math-proof">
@@ -21,7 +21,7 @@ Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <s
 <p><strong>Theorem 2</strong>.  <em>(Second Order Necessary conditions)<br />
 Let <span class="math inline">\(U \subset \mathbb{R}^{n}\)</span> be open and <span class="math inline">\(a \in \operatorname{int}(U)\)</span>. <span class="math inline">\(f: U \rightarrow \mathbb{R}\)</span> be <span class="math inline">\(C^{2}\)</span> function.</em></p>
 <div class="center">
-
+<p class="math-fbox-block"><span class="math-fbox">If <span class="math inline">\(f\)</span> attains a local maximum at <span class="math inline">\(a\)</span>, then <span class="math inline">\(D^{2}f(a)\)</span> is negative semi-definite.</span></p>
 </div>
 </div>
 <div class="math-proof">

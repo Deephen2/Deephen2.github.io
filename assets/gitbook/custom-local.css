@@ -96,7 +96,8 @@
     max-width: 100%;
 }
 
-.math-fbox-block {
+.math-fbox-block,
+.math-center {
     text-align: center;
 }
 
